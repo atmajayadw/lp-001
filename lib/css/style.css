@@ -8,22 +8,20 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Navbar */
+/* ---------------------- Navbar -----------------------*/
 
 #navbar .nav {
     display: flex;
     justify-content: space-between;
     height: 80px;
     align-items: center;
-    background-color: tomato;
     overflow: hidden;
-
+    z-index: 99;
 }
 
 #navbar .nav .links {
     margin-left: auto;
     width: 50%;
-    background-color: violet;
 }
 
 #navbar .nav ul {
@@ -49,3 +47,92 @@ body {
     border-radius: 20px;
     transition: 0.5s;
 }
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+}
+
+.hamburger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #722ED1;
+    ;
+    border-radius: 25px;
+}
+
+/* ----------------------------------------------- */
+
+/* ---------- RESPONSIVE BREAKPOINTS NAVBAR ---------- */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #navbar .nav .links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #navbar .nav .links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #navbar .nav .links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    #navbar .nav .links {
+        margin-left: auto;
+        width: 60%;
+        /* background-color: violet; */
+    }
+
+}
+
+/* ---------------------- End Navbar -----------------------*/
+
+/* ---------------------- Jumbotron -----------------------*/
+#jumbotron {
+    background-image: url('../../Assets/bg/bg.png');
+    height: 768px;
+    background-size: cover;
+    margin-top: -158px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ---------- RESPONSIVE BREAKPOINTS JUMBOTRON ---------- */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
