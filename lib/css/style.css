@@ -149,9 +149,11 @@ body {
     width: 16px;
 }
 
-#jumbotron .jumbo-left .updates p {
+#jumbotron .jumbo-left .updates h5 {
     margin: auto 0px;
     color: #722ED1;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 #jumbotron .jumbo-left .updates a {
@@ -326,10 +328,12 @@ body {
     width: 16px;
 }
 
-#why-us .why-us-title .head p {
+#why-us .why-us-title .head h5 {
     text-align: center;
     margin: auto 0px;
     color: #722ED1;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 #why-us .why-us-title .caption {
@@ -380,7 +384,7 @@ body {
     bottom: 0;
 }
 
-/* ---------- RESPONSIVE BREAKPOINTS ---------- */
+/* ---------- RESPONSIVE BREAKPOINTS WHY US---------- */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -412,6 +416,112 @@ body {
         margin: 10px 0px;
     }
 
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* ---------------------- End Why Us -----------------------*/
+
+/* ---------------------- Features -----------------------*/
+
+#features {
+    margin-top: 200px;
+}
+
+#features .features .features-title {
+    display: flex;
+    background-color: #F9F0FF;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 40px;
+    margin: 10px 0px;
+}
+
+#features .features .features-title img {
+    height: 16px;
+    width: 16px;
+}
+
+#features .features .features-title h5 {
+    text-align: center;
+    margin: auto 0px;
+    color: #722ED1;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#features .features-one .col-left img {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+
+#features .features-two .col-right img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+#features .features-one .col-right h2,
+#features .features-two .col-left h2 {
+    color: #160637;
+    font-weight: 600;
+    margin: 25px auto;
+}
+
+#features .features-one .col-right p,
+#features .features-two .col-left p {
+    color: #8989A2;
+    margin: 25px auto;
+    font-size: 16px;
+}
+
+#features .features-two {
+    margin-top: 80px;
+}
+
+/* ---------- RESPONSIVE BREAKPOINTS FEATURES---------- */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #features {
+        margin-top: 100px;
+    }
+
+    #features .features .features-title {
+        scale: 0.9;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+
+    #features .features-one .col-left img {
+        width: 70%;
+        height: 100%;
+    }
+
+    #features .features-one .col-right h2,
+    #features .features-two .col-left h2 {
+        font-size: 32px;
+        text-align: center;
+
+    }
+
+    ##features .features-one .col-right p,
+    #features .features-two .col-left p {
+        font-size: 12px;
+        text-align: center;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
