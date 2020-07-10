@@ -127,9 +127,151 @@ body {
     z-index: 2;
 }
 
+#jumbotron .row {
+    height: 400px;
+    margin-top: 158px;
+}
+
+#jumbotron .jumbo-left .updates {
+    display: flex;
+    background-color: #F9F0FF;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    margin: 10px 0px;
+}
+
+#jumbotron .jumbo-left .updates img {
+    height: 16px;
+    width: 16px;
+}
+
+#jumbotron .jumbo-left .updates p {
+    margin: auto 0px;
+    color: #722ED1;
+}
+
+#jumbotron .jumbo-left .updates a {
+    color: #722ED1;
+    text-decoration: none;
+}
+
+#jumbotron .jumbo-left .caption h1 {
+    color: #160637;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+#jumbotron .jumbo-left .caption p {
+    margin: 10px 0px;
+    color: #8989A2;
+    font-size: 16px;
+}
+
+
+#jumbotron .jumbo-left .buttons {
+    display: flex;
+}
+
+#jumbotron .jumbo-left .btn.start-trial {
+    background-color: #722ED1;
+    color: white;
+    width: 168px;
+    height: 48px;
+    border-radius: 25px;
+    margin-right: 10px;
+    box-shadow: 1px 1px 1px rgb(177, 177, 177);
+    margin-top: 20px;
+}
+
+#jumbotron .jumbo-left .btn.learn-more {
+    background-color: white;
+    color: black;
+    width: 168px;
+    height: 48px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px rgb(177, 177, 177);
+    margin-top: 20px;
+}
+
+#jumbotron .jumbo-right img {
+    width: 100%;
+    height: 100%;
+}
+
 /* ---------- RESPONSIVE BREAKPOINTS JUMBOTRON ---------- */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    #jumbotron .jumbo-right {
+        order: 1;
+    }
+
+    #jumbotron .jumbo-left {
+        order: 2;
+    }
+
+    #jumbotron .jumbo-left .updates {
+        scale: 0.9;
+        margin: 0 auto;
+    }
+
+    #jumbotron .jumbo-left .caption h1 {
+        font-size: 32px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    #jumbotron .jumbo-left .caption p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #jumbotron .jumbo-left .buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    #jumbotron .jumbo-left .btn.start-trial,
+    #jumbotron .jumbo-left .btn.learn-more {
+        width: 130px;
+        height: 48px;
+        font-size: 14px;
+    }
+
+}
+
+
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    #jumbotron .jumbo-left .updates {
+        scale: 0.9;
+        margin: 0 auto;
+    }
+
+    #jumbotron .jumbo-left .caption h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    #jumbotron .jumbo-left .caption p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #jumbotron .jumbo-left .buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    #jumbotron .jumbo-left .btn {
+        width: 50%;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {}
