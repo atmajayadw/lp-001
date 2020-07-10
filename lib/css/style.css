@@ -532,3 +532,109 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* ---------------------- End Features -----------------------*/
+
+/* ---------------------- Testimonials -----------------------*/
+
+#testimonials {
+    background-image: url('../../Assets/bg/bg2.png');
+    height: 768px;
+    background-size: cover;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+#testimonials .testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#testimonials .slides {
+    width: 100%;
+    height: 250px;
+    margin-top: 250px;
+}
+
+#testimonials .slides .quotes {
+    text-align: center;
+    font-size: 21px;
+    color: #160637;
+}
+
+#testimonials .slides img {
+    display: block;
+    margin: auto;
+}
+
+#testimonials .slides .name {
+    text-align: center;
+    font-size: 16px;
+    color: #160637;
+    font-weight: 700;
+    margin-top: 18px;
+}
+
+#testimonials .clients {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#testimonials .client {
+    margin: 15px 20px;
+}
+
+#testimonials hr {
+    margin-top: 20px;
+}
+
+/* ---------- RESPONSIVE BREAKPOINTS TESTIMONIALS---------- */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
+    #testimonials .slides {
+        margin-top: 220px;
+    }
+
+    #testimonials .slides img {
+        scale: 0.9;
+    }
+
+    #testimonials .slides .quotes {
+        font-size: 18px;
+    }
+
+    #testimonials .slides .name {
+        font-size: 12px;
+    }
+
+    #testimonials .clients {
+        margin-top: 25px;
+    }
+
+    #testimonials hr {
+        margin-top: 50px;
+        margin-bottom: -20px;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #testimonials .client {}
+
+    #testimonials .slides {}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
