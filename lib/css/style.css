@@ -130,6 +130,7 @@ body {
 #jumbotron .row {
     height: 400px;
     margin-top: 158px;
+    transform: translateY(150px);
 }
 
 #jumbotron .jumbo-left .updates {
@@ -206,6 +207,10 @@ body {
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
+    #jumbotron .row {
+        transform: translateY(0px);
+    }
+
     #jumbotron .jumbo-right {
         order: 1;
     }
@@ -248,6 +253,10 @@ body {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
 
+    #jumbotron .row {
+        transform: translateY(50px);
+    }
+
     #jumbotron .jumbo-left .updates {
         scale: 0.9;
         margin: 0 auto;
@@ -272,6 +281,141 @@ body {
         width: 50%;
     }
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #jumbotron .row {
+        transform: translateY(50px);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #jumbotron .row {
+        transform: translateY(100px);
+    }
+}
+
+/* ---------------------- End Jumbotron -----------------------*/
+
+/* ---------------------- Why Us -----------------------*/
+
+#why-us {
+    margin-top: 90px;
+}
+
+#why-us .why-us-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#why-us .why-us-title .head {
+    display: flex;
+    background-color: #F9F0FF;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    margin: 10px auto;
+}
+
+#why-us .why-us-title .head img {
+    height: 16px;
+    width: 16px;
+}
+
+#why-us .why-us-title .head p {
+    text-align: center;
+    margin: auto 0px;
+    color: #722ED1;
+}
+
+#why-us .why-us-title .caption {
+    max-width: 500px;
+    max-height: 300px;
+}
+
+#why-us .why-us-title .caption h2 {
+    text-align: center;
+    color: #160637;
+    font-weight: 600;
+    margin: 15px auto;
+}
+
+#why-us .why-us-title .caption p {
+    text-align: center;
+    color: #8989A2;
+    margin: 35px auto;
+}
+
+#why-us .services {
+    display: flex;
+    justify-content: space-around;
+}
+
+#why-us .why-us-services .service {
+    width: 230px;
+    height: 230px;
+    margin: 25px 0px;
+    position: relative;
+}
+
+#why-us .why-us-services .services-icon {
+    height: 20px;
+    width: 20px;
+}
+
+#why-us .why-us-services .service h5 {
+    font-size: 21px;
+    color: #160637;
+    font-weight: 700;
+    margin: 30px auto;
+}
+
+#why-us .why-us-services .service p {
+    color: #8989A2;
+    position: absolute;
+    bottom: 0;
+}
+
+/* ---------- RESPONSIVE BREAKPOINTS ---------- */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #why-us .why-us-title .head {
+        scale: 0.9;
+    }
+
+    #why-us .why-us-title .caption {
+        max-width: 360px;
+    }
+
+    #why-us .why-us-title .caption h2 {
+        text-align: center;
+        color: #160637;
+        font-weight: 600;
+        margin: 15px auto;
+        font-size: 32px;
+    }
+
+    #why-us .why-us-title .caption p {
+        text-align: center;
+        color: #8989A2;
+        margin: 35px auto;
+        font-size: 12px;
+    }
+
+    #why-us .why-us-services .service {
+        scale: 0.9;
+        margin: 10px 0px;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {}
