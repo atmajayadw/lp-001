@@ -750,10 +750,77 @@ body {
     font-size: 14px;
 }
 
-/* ---------- RESPONSIVE BREAKPOINTS PARTNERSHIP ---------- */
+/* ---------------------- End PARTNERSHIP -----------------------*/
+
+/* ---------------------- FOOTER -----------------------*/
+
+#footer {
+    margin-top: 150px;
+    background-color: #FBFCFF;
+    padding-top: 50px;
+}
+
+#footer .first img {
+    width: 48px;
+    height: 48px;
+}
+
+#footer .first p {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #160637;
+}
+
+#footer .socmed {
+    display: flex;
+}
+
+#footer .socmed img {
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+}
+
+#footer h5 {
+    font-size: 18px;
+    color: #160637;
+    font-weight: 700px;
+    margin-bottom: 20px;
+}
+
+#footer ul {
+    list-style: none;
+}
+
+#footer ul li {
+    font-size: 12px;
+    color: #160637;
+    margin-top: 10px;
+    margin-left: -40px;
+}
+
+/* ---------- RESPONSIVE BREAKPOINTS ---------- */
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth,
+    .sixth {
+        margin: 20px auto;
+    }
+
+    #footer h5 {
+        text-align: center;
+    }
+
+    #footer ul li {
+        text-align: center;
+    }
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {}
