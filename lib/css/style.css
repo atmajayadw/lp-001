@@ -517,7 +517,7 @@ body {
 
     }
 
-    ##features .features-one .col-right p,
+    #features .features-one .col-right p,
     #features .features-two .col-left p {
         font-size: 12px;
         text-align: center;
@@ -541,10 +541,6 @@ body {
     background-image: url('../../Assets/bg/bg2.png');
     height: 768px;
     background-size: cover;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
 #testimonials .testimonials {
@@ -600,7 +596,7 @@ body {
 
 
     #testimonials .slides {
-        margin-top: 220px;
+        margin-top: 200px;
     }
 
     #testimonials .slides img {
@@ -632,6 +628,135 @@ body {
 
     #testimonials .slides {}
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* ---------------------- End Testimonials -----------------------*/
+
+/* ---------------------- Features -----------------------*/
+
+#partnership {
+    margin-top: 120px;
+}
+
+#partnership .partners h2 {
+    font-size: 32px;
+    color: #160637;
+}
+
+#partnership .partners h5 {
+    font-size: 16px;
+    color: #8989A2;
+}
+
+#partnership .partners .trusted {
+    position: relative;
+    margin-top: 50px;
+}
+
+#partnership .partners .trusted p {
+    font-size: 14px;
+    color: #8989A2;
+    text-align: center;
+}
+
+#partnership .partners .trusted p::before {
+    border-top: 1px solid #8989A2;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 17px;
+    width: 30%;
+    bottom: 0;
+    margin: -5px auto;
+}
+
+#partnership .partners .trusted p::after {
+    border-top: 1px solid #8989A2;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 17px;
+    width: 30%;
+    bottom: 0;
+    margin: -5px auto;
+}
+
+#partnership .partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#partnership .partners .partner-list .partner {
+    width: 35%;
+    margin: 20px 0;
+}
+
+#partnership .partners .partner-list .partner img {
+    display: block;
+    margin: auto;
+}
+
+#partnership .signup .form-box {
+    height: 500px;
+    border: 1px solid rgba(230, 216, 230, 0.5);
+    margin: 32px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 50px 0px 30px #F9F0FF;
+}
+
+#partnership .form-box h5 {
+    font-size: 21px;
+    color: #160637;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+#partnership .form-box .form {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#partnership .form-box .signup {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    background-color: #722ED1;
+    border-radius: 5px;
+    color: white;
+}
+
+#partnership .form-box p {
+    text-align: center;
+    margin: 20px;
+}
+
+#partnership .form-box .signgoogle img {
+    margin: auto;
+    display: block;
+}
+
+#partnership .form-box p:last-child {
+    color: #8989A2;
+    font-size: 14px;
+}
+
+/* ---------- RESPONSIVE BREAKPOINTS PARTNERSHIP ---------- */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {}
