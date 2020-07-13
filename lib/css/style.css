@@ -34,11 +34,13 @@ body {
     line-height: 80px;
 }
 
-#navbar .nav ul li a {
+#navbar .nav .links .link {
     text-decoration: none;
     color: #160637;
     font-size: 1em;
     cursor: pointer;
+    position: relative;
+
 }
 
 #navbar .nav .links .btnstart {
@@ -46,6 +48,33 @@ body {
     width: 150px;
     border-radius: 20px;
     transition: 0.5s;
+}
+
+#navbar .nav .links .btnstart:hover {
+    background-color: #722ED1;
+    color: white;
+}
+
+#navbar .nav .links .link:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    background-color: #160637;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+#navbar .nav .links .link:hover:after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .hamburger {
