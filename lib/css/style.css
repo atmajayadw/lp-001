@@ -695,6 +695,15 @@ body {
 
 #testimonials .client {
     margin: 15px 20px;
+    cursor: pointer;
+}
+
+#testimonials .client .imageon {
+    /* display: none; */
+}
+
+#testimonials .client .imageoff {
+    /* display: block; */
 }
 
 #testimonials hr {
