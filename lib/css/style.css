@@ -698,14 +698,6 @@ body {
     cursor: pointer;
 }
 
-#testimonials .client .imageon {
-    /* display: none; */
-}
-
-#testimonials .client .imageoff {
-    /* display: block; */
-}
-
 #testimonials hr {
     margin-top: 20px;
 }
