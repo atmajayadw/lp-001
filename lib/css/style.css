@@ -821,9 +821,10 @@ body {
 }
 
 #partnership .signup .form-box {
+    width: 330px;
     height: 500px;
     border: 1px solid rgba(230, 216, 230, 0.5);
-    margin: 32px;
+    margin: 30px auto;
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 0px 50px 0px 30px #F9F0FF;
@@ -843,7 +844,7 @@ body {
     margin-top: 20px;
 }
 
-#partnership .form-box .signup {
+/* #partnership .form-box .signup {
     width: 90%;
     margin: auto;
     margin-top: 20px;
@@ -851,7 +852,7 @@ body {
     background-color: #722ED1;
     border-radius: 5px;
     color: white;
-}
+} */
 
 #partnership .form-box p {
     text-align: center;
@@ -917,7 +918,13 @@ body {
     margin-left: -40px;
 }
 
-/* ---------- RESPONSIVE BREAKPOINTS ---------- */
+#footer .designer {
+    color: #160637;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* ---------- RESPONSIVE BREAKPOINTS Footer ---------- */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -937,6 +944,15 @@ body {
 
     #footer ul li {
         text-align: center;
+    }
+
+    #footer .socmed {
+        justify-content: space-around;
+    }
+
+    #footer .first img {
+        display: block;
+        margin: auto;
     }
 }
 
